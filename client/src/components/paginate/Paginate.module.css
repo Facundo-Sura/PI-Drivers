@@ -1,0 +1,23 @@
+.paginate{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.buttons:hover {
+    background-color: rgba(238, 238, 17,0.9);
+}
+
+.nextyprev:hover{
+    background-color: rgba(255, 5, 5, 0.9);
+}
+
+.nextyprev{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0.1em
+}
+.buttons{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}

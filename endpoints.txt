@@ -1,4 +1,0 @@
-Únicos end-point que se pueden utilizar
-GET http://localhost:5000/drivers
-GET http://localhost:5000/drivers?name.forename={name}
-GET http://localhost:5000/drivers/:{id}

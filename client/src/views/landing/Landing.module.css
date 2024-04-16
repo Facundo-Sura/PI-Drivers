@@ -1,0 +1,23 @@
+.contenedorbase{
+    width: 100vw;
+    height: 100%;
+}
+.contenedorimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    width: 75%;
+    height: 20%;
+    margin-top: 0;
+}
+.divbutton{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 100%;
+}

@@ -1,0 +1,82 @@
+.contenedor{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.ebayimg.com/images/g/IIMAAOSwG3tevXF3/s-l1200.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-position: center;
+    
+}
+
+
+.form{
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.9) 35%, rgba(255, 255, 0, 0.9));
+    width: 24%;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 8px 5px 10px rgb(0, 0, 0,0.9);
+    border: 1.5px solid black;
+}
+.label{
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    
+}
+.info{
+    width: 95%;
+    border-radius: 6px;
+    border: 0;
+    height: 3.5vb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.divbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+.span{
+    color: rgb(49, 21, 21);
+    font-weight: bold;
+}
+
+.divTeams{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.9) 35%, rgba(255, 255, 0, 0.9));
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 8px 5px 10px rgb(0, 0, 0,0.9);
+    border: 1.5px solid black;
+}
+
+.divTeams h2{
+    color: black;
+}
+
+.team{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.divTeams button{
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+}

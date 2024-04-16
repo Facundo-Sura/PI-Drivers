@@ -1,0 +1,25 @@
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.buttons{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons :hover{
+    background-color: rgba(3, 33, 209,0.9);
+}
+.contenedor{
+    display: block;
+}
+
+.paginate{
+    width: 100vw;
+    
+}

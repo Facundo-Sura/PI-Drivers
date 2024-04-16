@@ -1,11 +1,26 @@
-import React from "react";
+import style from "./Card.module.css"
+import {Link} from "react-router-dom"
+import {useDispatch} from "react-redux";
 
-function Card({ id, image, name, lastName, teams }) {
-  return <div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>;
+const Card = (driver) => {
+    const dispatch = useDispatch()
+    const {name,image,id} = driver
+    return(
+        <>
+        <div className={style.card}>
+            <Link to={`/detailPage/${id}`}>
+            <div className={style.divimage}>
+            <img src={image} alt={name} className={style.img} />
+            </div>
+            </Link>
+            <Link to={`/detailPage/${id}`}>
+            <div className={style.divcontent} >
+            <p className={style.name}>{name} </p>
+            </div>
+            </Link>
+        </div>
+        </>
+    )
 }
 
-export default Card;
+export default Card

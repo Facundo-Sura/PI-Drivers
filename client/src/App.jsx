@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import {Routes, Route} from 'react-router-dom'
-import Landing from './views/landing/Landing'
+import Landing from './views/landing/Landing';
+import {Route, Routes} from "react-router-dom";
+import Home from './views/home/Home';
+import Detail from "./views/detail/Detail";
+import FormPage from "./views/formPage/FormPage"
 
 function App() {
+
   return (
-    <>
-      <div>
-      <div className="titulo">
-        <h1>Bienvenido al excitante mundo de las carreras</h1>
-      </div>
-      <div className="boton">
-          <button>Empieza!</button>
-        </div>
-      </div>
-    </>
+    <div>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/detailPage/:id' element={<Detail/>} />
+        <Route path='/formPage' element={<FormPage/>} />
+      </Routes>
+    </div>
   )
 }
 
