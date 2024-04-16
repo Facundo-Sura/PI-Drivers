@@ -5,18 +5,16 @@ import {Link} from "react-router-dom"
 const Landing = () => {
 
     return(
-        <div className={style.contenedorbase}>
-            <div className={style.contenedorimg}>
-            <img src="https://i.ebayimg.com/images/g/IIMAAOSwG3tevXF3/s-l1200.webp" alt="" />
-            </div>
-            <div className={style.divbutton}>
-            <Link to="/home">
-            <button className={style.button}>
-                Ingresar
-            </button>
-            </Link>
-            </div>
-        </div>
+        <div className={style.container}>
+      <div className={style.title}>
+        <h1>PI Drivers Henry</h1>
+      </div>
+      <div className={style.button}>
+        <Link to="/home">
+          <button className={style.button}>HOME</button>
+        </Link>
+      </div>
+    </div>
     )
 }
 
