@@ -1,23 +1,19 @@
 .paginate{
-    width: auto;
+    margin: 1%;
     display: flex;
     justify-content: center;
-    margin: 1%;
-}
-
-.buttons:hover {
-    background-color: rgba(238, 238, 17,0.9);
-}
-
-.nextyprev:hover{
-    background-color: rgba(255, 5, 5, 0.9);
-}
-
-.nextyprev{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin:0.1em
 }
 .buttons{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    background-color: rgba(255, 255, 255, .5);
+    border: none;
+}
+.buttons:hover {
+    background-color: rgba(105, 175, 255, .7);
+}
+.nextyprev{
+    outline: none;
+    border: 0;
+}
+.nextyprev:hover{
+    background-color: rgba(95, 155, 255, .9);
 }

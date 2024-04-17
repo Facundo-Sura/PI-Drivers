@@ -4,6 +4,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .container{
     background-color: rgba(255, 255, 255, .2);
