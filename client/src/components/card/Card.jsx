@@ -12,8 +12,6 @@ const Card = (driver) => {
             <div className={style.divimage}>
             <img src={image} alt={name} className={style.img} />
             </div>
-            </Link>
-            <Link to={`/detailPage/${id}`}>
             <div className={style.divcontent} >
             <p className={style.name}>{name} </p>
             </div>

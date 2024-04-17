@@ -1,27 +1,20 @@
 .card{
     width: 10%;
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 4%;
-    margin-left: 3.5%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    height: fit-content;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    margin: 1.4%;
+    padding: 1%;
+    border-radius: 7.5%;
 }
 .divimage{
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
     margin-bottom: 8%;
     
-}
-.divcontent{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 215, 0,0.9);
-    border-radius: 10px 10px 10px 10px;
 }
 .img{
     width: 100%;
@@ -29,13 +22,14 @@
     min-width: 100%;
     max-height: 180px;
     min-height: 180px;
-    border-radius: 10px;
 }
 .name{
+    text-align: center;
     font-weight: bold;
-    color: black;
+    color: #fff;
+    padding-top: 5%;
 }
-.divcontent:hover{
+.card:hover{
     scale: 1.2;
     cursor: pointer;
 }
