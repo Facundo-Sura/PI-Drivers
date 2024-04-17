@@ -41,20 +41,22 @@ const Home =  () => {
                     })}
                 </select>
                 <select name="filter2" id="filter2" className={style.selects} onChange={()=>handle(event,filByOr)}>
-                    <option value= "" disabled selected>Selected option</option>
-                    <option value="all">All</option>
+                    <option value="all">All Drivers</option>
                     <option value="api" >Api</option>
                     <option value="db">DataBase</option>
                 </select>
                 <select name="filter3" id="filter3" className={style.selects} onChange={()=>handle(event,orderByAlpha)}>
-                    <option value="" disabled selected>Selected option</option>
+                    <option value="" disabled selected>Order by</option>
                     <option value="desbyalfa">Descend Alphabetically</option>
                     <option value="asbyalfa">Ascend Alphabetically</option>
                     <option value="desbydob">Desend By Date Of Birth</option>
                     <option value="asbydob">Ascend By Date Of Birth</option>
                 </select>
             </div>
+            <div className="title"><h1></h1></div>
+            <div className={style.searchbar}>
             <SearchBar />
+            </div>
         </div>
         <div className={style.cards}>
             <Cards />
