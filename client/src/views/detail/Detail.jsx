@@ -4,50 +4,53 @@ import axios from "axios";
 import { URL_BASE } from "../../endpoints";
 import { useParams } from "react-router-dom";
 
-
 const detailPage = () => {
-   // const {name,lastName,nationality,image,description,dob,teams} = driverDetail;
-    const [state,setState] = useState({})
-    const {name,lastName,nationality,image,description,dob,teams} =state
-    const {id} = useParams()
+  // const {name,lastName,nationality,image,description,dob,teams} = driverDetail;
+  const [state, setState] = useState({});
+  const { name, lastName, nationality, image, description, dob, teams } = state;
+  const { id } = useParams();
 
-    useEffect(()=>{
-        axios(`${URL_BASE}/${id}`)
-        .then(({data})=>{
-            setState(data)
-            return () => {
-                setState({})
-            }
-        })
-    },[])
+  useEffect(() => {
+    axios(`${URL_BASE}/${id}`).then(({ data }) => {
+      setState(data);
+      return () => {
+        setState({});
+      };
+    });
+  }, []);
 
-    if(state){
-    return(
-        <div className={style.contenedor} >
-        <div className={style.detail}>
-            <div className={style.contdivimg}>
-            <div className={style.divimage}>
+  if (state) {
+    return (
+      <div className={style.conteiner}>
+        <div className={style.imginfo}>
+          <div className={style.divimage}>
             <img src={image} alt={name} className={style.image} />
-            </div>
-            </div>
-            <div className={style.datos}>
-            <h1 style={{borderBottom:"1px solid black"}}>{`${name} ${lastName}`} </h1>
-            <p className={style.pyh}>{id} </p>
-            <h2 className={style.pyh}>{nationality} </h2>
-            <p className={style.pyh}>{dob} </p>
-            {teams?.map(team=>{
-                return <span key={team} volue={team} className={style.pyh}>{team} </span>
-            })}
-            <div className={style.descrip}>
-                <h2 className={style.h2}>Description</h2>
-                <p >{description} </p>
-            </div>
-            </div>
-            </div>
+          </div>
+          <div className={style.datos}>
+            <h1 className={style.name} >
+              {`${name} ${lastName}`}{" "}
+            </h1>
+            <p className={style.pyh}>ID: {id} </p>
+            <p className={style.pyh}>Nationality: {nationality} </p>
+            <p className={style.pyh}>Date of birth: {dob} </p>
+            <p className={style.pyh}>Teams: {teams?.map((team) => {
+              return (
+                <span key={team} volue={team} className={style.pyh}>
+                  {team}{". "}
+                </span>
+              );
+            })} </p>
+          </div>
         </div>
-    )}else{
-        <h1>Loading...</h1>
-    }
-}
+        <div className={style.descrip}>
+          <h1 className={style.desc}>Description</h1>
+          <p>{description} </p>
+        </div>
+      </div>
+    );
+  } else {
+    <h1>Loading...</h1>;
+  }
+};
 
-export default detailPage
+export default detailPage;

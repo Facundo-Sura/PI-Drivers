@@ -1,84 +1,70 @@
-.contenedor{
-    width: 100vw;
-    height: 100vh;
+@import url("https://fonts.googleapos.com/css2?family=Poppins:weght@300;400;500;600;700;800;900&display=swamp");
+.conteiner {
+    height: 520px;
+    width: 80%;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: 5% 75% 0 5%;
+    padding: 20px 30px;
     display: flex;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
 }
-
-.detail{
-    width: 72%;
-    height: 70%;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.9)34%, rgba(231, 231, 3, 0.85));
-    display: flex;
-    margin-top: 5%;
-    box-shadow: 5px;
-    border: 2px solid black;
-    border-radius: 28px; 
-    padding: 20px;
-    box-shadow: 8px 5px 10px rgb(0, 0, 0,0.9);
+.imginfo{
+    margin: 1.5%;
 }
-
-.divimage{
-    height: 90%;
-    width: 100%;
-    margin-left: 5%;
-}
-
-.contdivimg{
+.contdivimg {
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.image{
+.divimage {
+    height: 50%;
+}
+.datos {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.image {
     height: 100%;
     width: 100%;
     min-width: 18vw;
     max-width: 20vw;
     border-radius: 8px;
 }
-.datos{
-    margin-left: 2%;
-    width: 100%;
-}
-.pyh{
+.pyh {
     font-weight: bold;
     color: black;
-    font-size: 3vb;
+    font-size: 16px;
     margin-bottom: 4%;
 }
-
-.descrip{
-    display: block;
-    width: auto;
-    height: auto;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: rgba(255, 0, 0);
-    border: 1px solid black;
-    box-shadow: 8px 0px 10px rgb(0, 0, 0,0.9);
-    padding: 1%;
-    padding-top: 0;
-    margin-top: 2%;
-    padding-bottom: 2%;
-}
-.descrip h2{
-    color: white;
-}
-.descrip p{
-    display: none;
-}
-.descrip:hover p{
-    display: block;
-    font-weight: bold;
+.descrip {
+    background-color: rgba(255, 255, 255, .3);
     color: black;
+    margin: 4%;
+    padding: 1.5%;
+    border-radius: 1%;
+    overflow: auto;
 }
-.datos h1{
+.descrip::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 50px;
+    width: 12px;
+}
+.descrip::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50px;
+}
+.datos h1 {
     color: white;
+    text-align: center;
+    border-bottom: 1px solid black;
 }
-
+.descrip h1 {
+    color: white;
+    border-bottom: 1px solid black;
+}
