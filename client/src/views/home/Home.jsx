@@ -34,7 +34,7 @@ const Home =  () => {
                     dispatch(stateFiltered(1))
                     dispatch(keepStatePyN)
                     } }>
-                    <option value="" disabled selected >Selected Team</option>
+                    <option value="" disabled selected >Order by Team</option>
                     {teams.map(team=>{
                         const {name} = team
                         return <option key={name} value={name} id={name}>{name}</option>

@@ -9,6 +9,7 @@
 }
 .buttons:hover {
     background-color: rgba(105, 175, 255, .7);
+    cursor: pointer;
 }
 .nextyprev{
     outline: none;
@@ -16,4 +17,5 @@
 }
 .nextyprev:hover{
     background-color: rgba(95, 155, 255, .9);
+    cursor: pointer;
 }

@@ -12,6 +12,10 @@
     width: 125px;
     height: 25px;
 }
+.button:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
 .searchbar{
     background-color: transparent;
     border: 1px solid rgb(0, 0, 0);
@@ -28,6 +32,9 @@
 .searchbutton{
     background-color: transparent;
     border: 0;
+}
+.searchbutton:hover{
+    cursor: pointer;
 }
 .searchbutton img{
     background-color: transparent;

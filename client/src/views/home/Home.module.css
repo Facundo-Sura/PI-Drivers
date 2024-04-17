@@ -28,6 +28,9 @@
     min-width: 40%;
     border-radius: 15px;
 }
+.filters select:hover{
+    cursor: pointer;
+}
 .searchbar{
     width: 30%;
 }
