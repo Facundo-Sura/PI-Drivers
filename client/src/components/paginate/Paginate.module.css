@@ -1,21 +1,22 @@
-.paginate{
-    margin: 1.7%;
-    display: flex;
-    justify-content: center;
-}
-.buttons{
-    background-color: rgba(255, 255, 255, .5);
+.buttons {
+    background: transparent;
+    margin: 10px;
     border: none;
-}
-.buttons:hover {
-    background-color: rgba(105, 175, 255, .7);
+    color: white;
+    font-size: 40px;
     cursor: pointer;
 }
-.nextyprev{
-    outline: none;
-    border: 0;
+
+.buttons:hover, .nextyprev:hover {
+    transform: scale(2, 2);
+    text-shadow: 5px 4px 3px grey;
 }
-.nextyprev:hover{
-    background-color: rgba(95, 155, 255, .9);
+
+.nextyprev {
+    background: transparent;
+    margin: 10px;
+    border: none;
+    color: white;
+    font-size: 30px;
     cursor: pointer;
 }

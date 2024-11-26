@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import useSearch from "../../hooks/useSearch";
 import style from "./SearchBar.module.css";
+import search from "../../assets/search.png";
 import { useSelector } from "react-redux";
-import filter from "../../hooks/filter";
+import useSearch from "../../hooks/useSearch";
+
 const SearchBar = () => {
   const { input, setInput, handleSearch } = useSearch();
   const aux = useSelector((state) => state.aux);
@@ -17,22 +17,16 @@ const SearchBar = () => {
   return (
     <>
       <div className={style.search}>
-        <div className={style.createnew}>
-          <Link to="/formPage">
-            <button className={style.button}>Create new</button>
-          </Link>
-        </div>
-        <div className={style.searchbar}>
           <input
             type="text"
             className={style.input}
             value={input}
             onChange={handleChange}
+            placeholder="search"
           />
-          <button className={style.searchbutton} onClick={handleClick}>
-            <img src="/src/imagenes/i3kvlpusd9rv8diq849o468brk.png" />
+          <button className={style.button} onClick={handleClick}>
+            <img className={style.img} src={search} alt="search" />
           </button>
-        </div>
       </div>
     </>
   );

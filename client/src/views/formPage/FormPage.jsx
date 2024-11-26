@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { handle } from "../../hooks/handle";
 import useAuxValidates from "../../hooks/useauxValidates";
 import { handleSubmit } from "../../hooks/handle";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 const FormPage = () => {
   const teams = useSelector((state) => state.teams);
@@ -30,12 +32,13 @@ const FormPage = () => {
 
   return (
     <div className={style.cont}>
+      <Navbar />
       <form
         className={style.form}
         onSubmit={() => handleSubmit(event, form, errors)}
       >
         <div className={style.divform}>
-          <h1>Create Driver</h1>
+          <h1 className={style.title}>Create Driver</h1>
           <input
             type="text"
             name="name"
@@ -78,6 +81,15 @@ const FormPage = () => {
           <span className={style.span}>{errors.dob} </span>
           <input
             type="text"
+            name="image"
+            value={image}
+            placeholder="Image (URL)"
+            className={style.info}
+            onChange={handleForm}
+          />
+          <span className={style.span}>{errors.image} </span>
+          <input
+            type="text"
             name="description"
             id="description"
             placeholder="Description"
@@ -86,15 +98,6 @@ const FormPage = () => {
             onChange={handleForm}
           />
           <span className={style.span}>{errors.description} </span>
-          <input
-            type="text"
-            name="image"
-            value={image}
-            placeholder="Image (URL)"
-            className={style.info}
-            onChange={handleForm}
-          />
-          <span className={style.span}>{errors.image} </span>
           <select name="teams" onChange={() => handle(event, teamsSelecteds)}>
             <option value="" disabled selected>
               Teams
@@ -109,7 +112,7 @@ const FormPage = () => {
             })}
           </select>
           <div className={style.divbutton}>
-            <button type="submit">Submit</button>
+            <button className={style.submitButton} type="submit">Submit</button>
           </div>
         </div>
       </form>
@@ -131,6 +134,7 @@ const FormPage = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };

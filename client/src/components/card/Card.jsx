@@ -8,13 +8,9 @@ const Card = (driver) => {
   return (
     <>
       <div className={style.card}>
-        <Link to={`/detailPage/${id}`}>
-          <div className={style.divimage}>
+        <Link className={style.linkCard} to={`/detailPage/${id}`}>
             <img src={image} alt={name} className={style.img} />
-          </div>
-          <div className={style.divcontent}>
             <span className={style.name}>{name} </span>
-          </div>
         </Link>
       </div>
     </>

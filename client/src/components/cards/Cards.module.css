@@ -1,26 +1,10 @@
-.cards{
-    width: 90%;
-    margin-left: 5.5%;
+.contenedor {
+    text-align: center;
+}
+
+.cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.buttons{
-    width: auto;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-}
-
-.buttons :hover{
-    background-color: rgba(3, 33, 209,0.9);
-}
-.contenedor{
-    display: block;
-}
-
-.paginate{
-    width: 100%;
 }

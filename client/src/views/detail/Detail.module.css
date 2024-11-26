@@ -1,70 +1,35 @@
-@import url("https://fonts.googleapos.com/css2?family=Poppins:weght@300;400;500;600;700;800;900&display=swamp");
-.conteiner {
-    height: 520px;
-    width: 80%;
-    background-color: transparent;
-    font-family: "Poppins", sans-serif;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    margin: 5% 75% 0 5%;
-    padding: 20px 30px;
-    display: flex;
-}
-.imginfo{
-    margin: 1.5%;
-}
-.contdivimg {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.divimage {
-    height: 50%;
-}
-.datos {
+.container {
     width: 100%;
-    padding: 0;
-    margin: 0;
 }
+
+.imginfo {
+    margin: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .image {
-    height: 100%;
-    width: 100%;
-    min-width: 18vw;
-    max-width: 20vw;
-    border-radius: 8px;
+    width: 333px;
+    height: 500px;
+    margin: 0 10px;
+    border-radius: 10px;
 }
-.pyh {
-    font-weight: bold;
-    color: black;
-    font-size: 16px;
-    margin-bottom: 4%;
+
+.datos {
+    text-align: end;
 }
-.descrip {
-    background-color: rgba(255, 255, 255, .3);
-    color: black;
-    margin: 4%;
-    padding: 1.5%;
-    border-radius: 1%;
-    overflow: auto;
-}
-.descrip::-webkit-scrollbar{
-    background-color: transparent;
-    border-radius: 50px;
-    width: 12px;
-}
-.descrip::-webkit-scrollbar-thumb{
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: 50px;
-}
-.datos h1 {
-    color: white;
+
+.name {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
-.descrip h1 {
-    color: white;
-    border-bottom: 1px solid black;
+
+.descrip {
+    text-align: start;
+}
+
+.desc {
+    border-bottom: 1px solid white;
 }
