@@ -4,7 +4,7 @@
     z-index: 3;
     width: 100%;
     height: 60px;
-    border-bottom: 2px  solid white;
+    border-bottom: 2px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,38 +15,106 @@
     border: transparent;
 }
 
+.titlePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transition: all 500ms;
+    transform: scale(1.5, 1.5) rotateZ(-360deg);
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0px 0px 10px 40px;
+}
+
+.title:hover .letter {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.letter {
+    font-family: "Faster One", system-ui;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-shadow: -7px 0px 10px gold;
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0;
+    animation-name: move;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        right: 10px;
+    }
+}
+
 .link {
     cursor: pointer;
     color: white;
+    letter-spacing: 2.5px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 800;
     position: relative;
     border-radius: 5px 5px 0 0;
     padding: 10px 25px;
-    transition: all .3s ease-in-out;
 }
 
 .link:hover {
-    transform: translateX(1.5rem);
-    background: rgba(255, 66, 66, 0.3);
+    background: rgba(255, 0, 0, 0.2);
+    transition: all 1s;
 }
 
-.link::before {
-    content: '';
-    position: absolute;
+.link::after {
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    position: absolute;
     background: gold;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 1s;
+    transition: width 300ms ease 0s, left 300ms ease 0s;
+    width: 0;
 }
 
-.link:hover::before {
-    transform: scaleX(1);
+.link:hover::after{
+    width: 100%;
+    left: 0;
 }
 
 .mLogo {
@@ -59,13 +127,7 @@
 
 .mLogo:hover {
     transition: all 1s;
-    transform: rotateZ(360deg) scale(3,3);
+    transform: rotateZ(360deg) scale(3, 3);
     filter: drop-shadow(0px 0px 1px red);
     background: transparent;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }

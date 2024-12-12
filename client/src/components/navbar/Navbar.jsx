@@ -7,6 +7,15 @@ export default function Navbar() {
     <div className={style.container}>
       <div className={style.titlePage}>
         <img className={style.logo} src="./F1.webp" alt="f1" />
+        <h1 className={style.title}>
+          <span className={style.letter}>D</span>
+          <span className={style.letter}>R</span>
+          <span className={style.letter}>I</span>
+          <span className={style.letter}>V</span>
+          <span className={style.letter}>E</span>
+          <span className={style.letter}>R</span>
+          <span className={style.letter}>S</span>
+        </h1>
       </div>
       <div className={style.nav}>
         <Link className={style.link} to="/">
