@@ -13,7 +13,7 @@ const Landing = () => {
         <Background />
       </div>
       <div className={style.info}>
-        <h1 className={style.title}>ProyecI Drivers Henry</h1>
+        <h1 className={style.title}>Proyeco Individual Henry Drivers</h1>
       </div>
     </div>
   );

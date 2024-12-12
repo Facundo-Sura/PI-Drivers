@@ -1,6 +1,4 @@
 import style from "./Footer.module.css";
-import linkedin from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
 
 export default function Footer() {
   return (
@@ -8,10 +6,10 @@ export default function Footer() {
       <div className={style.media}>
         <h3>Mis redes sociales</h3>
         <a href="https://www.linkedin.com/in/facundo-martin-emiliano-s-974b74253/">
-          <img className={style.contact} src={linkedin} alt="linkedin" />
+          <img className={style.contact} src="./linkedin.png" alt="linkedin" />
         </a>
         <a href="https://github.com/Facundo-Sura">
-          <img className={style.contact} src={github} alt="github" />
+          <img className={style.contact} src="github.png" alt="github" />
         </a>
       </div>
       <div>
