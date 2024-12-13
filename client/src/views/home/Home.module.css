@@ -1,0 +1,54 @@
+.home {
+    background: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 80px 0px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selects {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 15px;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.selects::-webkit-scrollbar {
+    width: 5px;
+}
+
+.selects::-webkit-scrollbar-track {
+    background: red;
+}
+
+.selects::-webkit-scrollbar-thumb {
+    background-color: gold;
+}
+
+.selects:hover {
+    background: rgba(255, 0, 0, 0.5);
+    color:  gold;
+}
+
+option {
+    background: red;
+}
+
+option:hover {
+    background: rgba(255, 0, 0, 0.5);
+}

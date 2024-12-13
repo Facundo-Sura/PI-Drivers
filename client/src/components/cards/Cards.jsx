@@ -23,6 +23,7 @@ const Cards = () => {
 
   return (
     <div className={style.contenedor}>
+      <h1 className={style.title}>F1 Drivers</h1>
       <div className={style.cards}>
         {visual.map((driver) => {
           const {
