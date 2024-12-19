@@ -1,10 +1,6 @@
-.container {
-    width: 100%;
-}
-
 .imginfo {
-    margin: 40px;
-    padding: 10px;
+    background: red;
+    padding: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,15 +11,18 @@
     height: 500px;
     margin: 0 10px;
     border-radius: 10px;
+    align-self: stretch;
 }
 
 .datos {
+    background: white;
     text-align: end;
+    align-self: stretch;
 }
 
 .name {
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 .descrip {
@@ -31,5 +30,5 @@
 }
 
 .desc {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
