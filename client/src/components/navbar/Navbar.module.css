@@ -1,5 +1,6 @@
 .container {
     background: linear-gradient(black, transparent);
+    backdrop-filter: blur(15px);
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -13,6 +14,8 @@
 
 .container:hover {
     border: transparent;
+    transition: all 1s;
+    transform: scale(1.1, 1.1);
 }
 
 .titlePage {

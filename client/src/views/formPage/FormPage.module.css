@@ -1,49 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Contrail+One&family=Faster+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=SUSE:wght@100..800&family=Sixtyfour+Convergence&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.content {
+    background: url("https://tishonator.com/html/tishf1html/assets/slide6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "Audiowide";
+}
+
+.divForm {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .form {
-    height: 700px;
-    width: 500px;
-    margin: 20px auto;
-    border: 1px solid white;
+    background: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 400px;
+    height: fit-content;
+    margin: 50px 0;
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
     border-radius: 15px;
-    padding: 30px;
+    padding: 10px 50px;
     text-align: center;
 }
 
 .title {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
 }
 
 .info {
     background: transparent;
-    color: white;
-    width: 100%;
+    width: 95%;
     text-align: center;
-    margin: 17px auto;
-    border: 1px solid transparent;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: outset;
     outline: none;
-    padding: 5px;
+    padding: 7px;
 }
 
 .info:hover {
     cursor: pointer;
+    background: red;
+    color: gold;
 }
 
 .info:focus {
-    background: white;
-    color: black;
+    background: red;
+    color: gold;
+}
+
+.option{
+    text-align: center;
+    width: 100%;
+    margin: 17px auto;
+    border-radius: 15px;
+    border: outset;
+    outline: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: red;
+    color: gold;
 }
 
 .submitButton {
-    background: transparent;
-    color: white;
     width: 100%;
-    margin: 20px auto;
-    border: 1px solid transparent;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: outset;
+    outline: none;
     padding: 10px;
     text-transform: uppercase;
 }
 
 .submitButton:hover {
     cursor: pointer;
-    background: white;
-    color: black;
+    background: red;
+    color: white;
+}
+
+.list {
+    background: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 400px;
+    height: 575px;
+    margin: 50px 0;
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 15px;
+    padding: 10px 50px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: transparent;
+    border: .5px solid white;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.buttonX {
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttonX:hover {
+    cursor: pointer;
+    transition: all 500ms;
+    transform: scale(1.3);
+    background: black;
+    color: white;
 }
