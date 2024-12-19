@@ -19,6 +19,7 @@
 .selects {
     background: transparent;
     color: white;
+    text-align: center;
     cursor: pointer;
     outline: none;
     border: none;
