@@ -1,34 +1,113 @@
+.conteiner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .imginfo {
     background: red;
-    padding: 100px;
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .imginfo {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .imginfo {
+        padding: 100px;
+    }
 }
 
 .image {
-    width: 333px;
-    height: 500px;
+    width: 100%;
+    max-width: 333px;
+    height: auto;
+    aspect-ratio: 2/3;
     margin: 0 10px;
     border-radius: 10px;
-    align-self: stretch;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .image {
+        height: 500px;
+    }
 }
 
 .datos {
     background: white;
-    text-align: end;
-    align-self: stretch;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .datos {
+        text-align: end;
+        padding: 40px;
+    }
 }
 
 .name {
     text-align: center;
     border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .name {
+        font-size: 2rem;
+    }
+}
+
+.pyh {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .pyh {
+        font-size: 1.1rem;
+    }
 }
 
 .descrip {
     text-align: start;
+    margin-top: 30px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
 }
 
 .desc {
     border-bottom: 1px solid black;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.descrip p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .descrip p {
+        font-size: 1rem;
+    }
 }

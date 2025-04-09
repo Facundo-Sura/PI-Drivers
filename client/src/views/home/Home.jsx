@@ -1,16 +1,16 @@
-import style from "./Home.module.css";
-import Cards from "../../components/cards/Cards";
-import useFilByOrigin from "../../hooks/useFilByOrigin";
 import { useEffect } from "react";
+import useFilByOrigin from "../../hooks/useFilByOrigin";
 import useFilByTeam from "../../hooks/useFilByTeam";
-import { handle } from "../../hooks/handle";
 import useFil from "../../hooks/useFilter";
+import { handle } from "../../hooks/handle";
 import { useDispatch, useSelector } from "react-redux";
 import { getTeams } from "../../redux/actions/getTeams";
 import { stateFiltered } from "../../redux/actions/stateFilters";
 import { keepStatePyN } from "../../redux/actions/keepState";
 import Footer from "../../components/footer/Footer";
+import Cards from "../../components/cards/Cards";
 import Navbar from "../../components/navbar/Navbar";
+import style from "./Home.module.css";
 
 const Home = () => {
   const dispatch = useDispatch();

@@ -4,17 +4,44 @@
     border: none;
     font-size: 40px;
     cursor: pointer;
-}
-
-.buttons:hover, .nextyprev:hover {
+  }
+  
+  .buttons:hover,
+  .nextyprev:hover {
     transform: scale(2, 2);
     text-shadow: 5px 4px 3px grey;
-}
-
-.nextyprev {
+  }
+  
+  .nextyprev {
     background: transparent;
     margin: 10px;
     border: none;
     font-size: 30px;
     cursor: pointer;
-}
+  }
+  
+  .paginate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .buttons {
+      font-size: 20px;
+      margin: 5px;
+    }
+  
+    .nextyprev {
+      font-size: 18px;
+    }
+  
+    .paginate {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+  }
+  

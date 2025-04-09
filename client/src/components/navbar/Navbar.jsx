@@ -1,8 +1,15 @@
+import { useState } from "react";
 import style from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../../components/searchBar/SearchBar";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className={style.container}>
       <div className={style.titlePage}>
@@ -17,20 +24,29 @@ export default function Navbar() {
           <span className={style.letter}>S</span>
         </h1>
       </div>
-      <div className={style.nav}>
-        <Link className={style.link} to="/">
+
+      {/* Botón del menú hamburguesa */}
+      <button className={style.hamburger} onClick={toggleMenu}>
+        <div className={`${style.line} ${isMenuOpen ? style.line1 : ""}`}></div>
+        <div className={`${style.line} ${isMenuOpen ? style.line2 : ""}`}></div>
+        <div className={`${style.line} ${isMenuOpen ? style.line3 : ""}`}></div>
+      </button>
+
+      {/* Menú desplegable */}
+      <div className={`${style.nav} ${isMenuOpen ? style.navOpen : ""}`}>
+        <Link className={style.link} to="/" onClick={toggleMenu}>
           Landing
         </Link>
-        <Link className={style.link} to="/home">
+        <Link className={style.link} to="/home" onClick={toggleMenu}>
           Home
         </Link>
-        <Link className={style.link} to="/formPage">
+        <Link className={style.link} to="/formPage" onClick={toggleMenu}>
           Create
         </Link>
       </div>
+
       <div className={style.searchbar}>
-        <a className={style.media} href="https://github.com/Facundo-Sura
-">
+        <a className={style.media} href="https://github.com/Facundo-Sura">
           <img className={style.mLogo} src="./github.png" alt="github" />
         </a>
         <a className={style.media} href="https://www.linkedin.com/in/facundo-martin-emiliano-s-974b74253/">
