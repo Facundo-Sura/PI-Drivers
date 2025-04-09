@@ -3,15 +3,14 @@ import useForm from "../../hooks/useForm";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { handle } from "../../hooks/handle";
-import useAuxValidates from "../../hooks/useauxValidates";
+// import useAuxValidates from "../../hooks/useauxValidates";
 import { handleSubmit } from "../../hooks/handle";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 
 const FormPage = () => {
   const teams = useSelector((state) => state.teams);
-  const { teamsSelecteds, arrTeams, find, setArrTeams, setFind } =
-    useAuxValidates();
+  // const { teamsSelecteds, arrTeams, find, setArrTeams, setFind } = useAuxValidates();
   const { form, handleForm, setForm, errors } = useForm();
   const { name, lastName, nationality, description, image, dob } = form;
 
@@ -36,8 +35,7 @@ const FormPage = () => {
       <div className={style.divForm}>
         <form
           className={style.form}
-          onSubmit={() => handleSubmit(event, form, errors)}
-        >
+          onSubmit={() => handleSubmit(event, form, errors)}>
           <div className={style.divform}>
             <h1 className={style.title}>Create Driver</h1>
             <input
@@ -99,7 +97,11 @@ const FormPage = () => {
               onChange={handleForm}
             />
             <span className={style.span}>{errors.description} </span>
-            <select className={style.option} name="teams" onChange={() => handle(event, teamsSelecteds)}>
+            {/* <select className={style.option} name="teams" onChange={() => handle(event, teamsSelecteds)}> */}
+            <select
+              className={style.option}
+              name="teams"
+              onChange={() => handle(event)}>
               <option value="" disabled selected>
                 Teams
               </option>
@@ -130,8 +132,7 @@ const FormPage = () => {
                 <button
                   className={style.buttonX}
                   value={arrteam}
-                  onClick={() => handle(event, closeButton)}
-                >
+                  onClick={() => handle(event, closeButton)}>
                   X
                 </button>
               </div>
